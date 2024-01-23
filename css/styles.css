@@ -101,8 +101,8 @@ button {
   color: #000;
   background-color: #76ce82;
 
-  /* exceeds, add display transition */
-  transition: all 0.5s linear;
+  /* exceeds, add display transition + keep consistent with rest of page */
+  transition: var(--transition);
 }
 
 /* Keyboard */
