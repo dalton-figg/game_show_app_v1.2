@@ -57,7 +57,9 @@ const addPhraseToDisplay = (arr) => {
 
     // if it is a letter (not a space) then add the class letter
 
-    if (char !== ' ') listItem.className = 'letter';
+    char !== ' '
+      ? (listItem.className = 'letter')
+      : (listItem.className = 'space');
 
     // remember to actually add the text content of character
 
@@ -141,7 +143,7 @@ const resetGame = () => {
   // reset the displayed word
   phrase.innerHTML = '';
   addPhraseToDisplay(getRandomPhraseAsArray(phrases));
-  
+
   // reset keyboard
   buttons.forEach((button) => {
     if ((button.className = 'chosen')) {
